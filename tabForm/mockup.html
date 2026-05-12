@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../img/favicon.webp">
+    <meta name="description" content="A mockup project featuring HTML tables, forms, and organized layouts designed with accessibility and usability in mind.">
+    <title>Games to Play</title>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header>
+    <h1>Must Play Games</h1>
+    <p>Vote for the game we should play next!</p>
+</header>
+<nav class="breadcrumb">
+    <a href="../index.html">Home</a> > <span>Games</span>
+</nav>
+<main id="main-content">
+
+<h2>Popular Games</h2>
+
+<table>
+<caption>Top Games for Game Night</caption>
+
+<tr>
+<th>Game</th>
+<th>Genre</th>
+<th>Platform</th>
+</tr>
+
+<tr>
+<td>Hades</td>
+<td>Roguelike</td>
+<td>PC / Switch / Console</td>
+</tr>
+
+<tr>
+<td>Elden Ring</td>
+<td>Action RPG</td>
+<td>PC / Console / Switch</td>
+</tr>
+
+<tr>
+<td>Hollow Knight</td>
+<td>Metroidvania</td>
+<td>PC / Switch / Console</td>
+</tr>
+
+<tr>
+<td>Breath of the Wild</td>
+<td>Adventure</td>
+<td>Switch</td>
+</tr>
+
+</table>
+
+<h2>Vote for the Next Game Night</h2>
+
+<form action="result.html" method="get">
+    <label for="firstname">First Name *</label><br>
+    <input type="text" id="firstname" name="firstname" required><br><br>
+
+    <label for="lastname">Last Name *</label><br>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+
+    <label for="email">Email *</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="gamechoice">Which game should we play?</label><br>
+    <select id="gamechoice" name="gamechoice">
+<option>Hades</option>
+<option>Elden Ring</option>
+<option>Hollow Knight</option>
+<option>Breath of the Wild</option>
+</select>
+
+<br><br>
+
+<input class="submitbtn" type="submit" value="Submit Vote">
+
+</form>
+
+</main>
+
+<footer>
+<p>© 2026 Games to Play. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

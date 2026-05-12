@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0px;
+}
+
+html {
+	box-sizing: content-box;
+	font-size: 1rem;
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #E8E8E8;
+	line-height: 1.5em;
+}
+
+body {
+	display: grid;
+	grid-template: 520px 1fr 50px / 1fr 300px;
+	grid-template-areas: 
+		'header header' 
+		'main extra' 
+		'footer footer';
+}
+
+header {
+	border-bottom: 20px solid #DDC0C0;
+	background-image: url("images/flower_banner.jpg");
+	background-size: cover;
+	height: 500px;
+	text-align: center;
+	grid-area: header;
+}
+
+main {
+	border: 5px solid #DDC0C0;
+	grid-area: main;
+	padding: 20px;
+}
+
+.show {
+	text-align: center;
+	margin: 10px;
+	border-bottom: 2px solid #5B8900;
+}
+
+header h1 {
+	padding: 30px;
+	background: #432424;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	height: 60px;
+	background: #DDC0C0;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	height: 100%;
+}
+
+nav ul li {
+	margin: 2px 5px;
+}
+
+nav a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #743E3E;
+	font-size: 20px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+
+aside {
+	display: flex;
+	flex-flow: column;
+	background: #DDC0C0;
+	grid-area: extra;
+	padding: 30px;
+}
+
+aside h1, aside h2 {
+	color: #743E3E;
+}
+
+h1, h2 {
+	color: #5B8900;
+}
+
+h3 {
+	color: #743E3E;
+}
+
+p {
+	text-indent: 30px;
+}
+
+footer {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: right;
+	color: #5B8900;
+	grid-area: footer;
+	padding: 10px;
+}
+
+.portrait {
+	clip-path: circle(130px);
+	shape-outside: circle(150px);
+	width: 300px;
+	float: left;
+}
+
+@media screen and (max-width: 850px) {
+	body {
+	grid-template: 520px auto auto 50px / 1fr;
+	grid-template-areas: 
+		'header' 
+		'main'
+		'extra'
+		'footer';
+}
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.visually-hidden:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: absolute;
+  width: auto;
+  outline: 2px solid #432424;
+  top: 10px;
+  left: 10px;
+  background: #432424;
+  color: #ffffff;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 9999;
+}

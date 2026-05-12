@@ -1,0 +1,34 @@
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mystyle.css">
+
+.banner {
+    display: block;
+    margin: auto;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color:cadetblue;
+
+}
+
+h1, h2 {
+    font-family: "Roboto Slab", Georgia, "Times New Roman", serif;
+}
+
+blockquote {
+    font-style: italic;
+    color:darkgreen;
+
+}
+a {
+    color:darkolivegreen
+}
+a:visited {
+    color:rgb(45, 51, 34)
+}
+a:hover {
+    color:rgb(14, 83, 85)
+}

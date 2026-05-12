@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Exercise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../img/favicon.webp">
+    <meta name="description" content="Navigation and layout practice project using HTML and CSS to create organized menus, links, and styled page sections.">
+</head>
+<body>
+    
+    <header>
+        <div class="site-content">
+            <h1>Everything K-Pop</h1>
+            <p>This is an exercise to practice navigation!</p>
+        </div>
+
+        <nav>
+            <a href="#" class="nav-active">Groups</a>
+            <a href="#">Songs</a>
+            <a href="#">Albums</a>
+            <a href="#">Favorites</a>
+        </nav>
+    </header>
+
+     <main>
+        <aside>
+            <h2>Favorite Groups</h2>
+            <ul>
+                <li><a href="#">Illit</a></li>
+                <li><a href="#">New Jeans</a></li>
+                <li><a href="#">BTS</a></li>
+                <ul>
+                    <li><a href="#">HYYH</a></li>
+                    <li><a href="#">Arirang</a></li>
+                </ul>
+                <li><a href="#">Aespa</a></li>
+                <li><a href="#">IVE</a></li>
+                <li><a href="#">LE SSERAFIM</a></li>
+            </ul>
+
+            <br>
+
+            <h3>More K-Pop Links</h3>
+            <ul>
+                <li><a href="#">Favorite Songs</a></li>
+                <li><a href="#">Comebacks</a></li>
+                <ul>
+                    <li><a href="#">2024 Releases</a></li>
+                    <li><a href="#" class="aside-active">Dance Practices</a></li>
+                    <li><a href="#">Performance Videos</a></li>
+                </ul>
+                <li><a href="#">Bias List</a></li>
+            </ul>
+        </aside>
+
+        <section>
+            <p class="crumbs"><a href="#">Home</a> / <a href="#">Groups</a> / <a href="#">Dance Practices</a></p>
+
+            <h2>K=Pop Facts</h2>
+
+            <p>
+                Group Name Meaning: LE SSERAFIM is the anagram for “I’m Fearless”. It originally comes from the term “LESSERAPHIM”, whereas Seraphim is a 6 winged heavenly being. In this case, LE SSERAFIM (르세라핌) consists of 5 members with the fandom, which is a delegate for this meaning.
+                Official Greeting: “Hi, we’re LE SSERAFIM.” LE SSERAFIM Official Fandom Name: FEARNOT (피어나)
+                Fandom Name Meaning: “FEARNOT,” which is a homonym of “blooming” in Korean, carries a meaning that LE SSERAFIM marching forward fearlessly and fans who do “not fear” loving and supporting LE SSERAFIM come together to “bloom” every new moment.
+                LE SSERAFIM Official Color: Fearless Blue
+            </p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Daniela Watanabe</p>
+    </footer>
+</body>
+</html>
