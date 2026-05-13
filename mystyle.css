@@ -148,3 +148,19 @@ img {
     max-width: 100%;
     height: auto;
 }
+.project-card {
+    background-color: rgba(255,255,255,0.5);
+    padding: 1.5em;
+    border-radius: 12px;
+    margin-bottom: 2em;
+}
+
+.project-card a {
+    color: #5d6b56;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}

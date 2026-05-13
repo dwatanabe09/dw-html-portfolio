@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ghibli Travel Planner</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="mystyles.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+</head>
+
+
+
+<body>
+
+<nav class="breadcrumbs">
+    <a href="../index.html">Home</a> \ Ghibli Travel Planner
+</nav>
+
+    <main>
+
+        <h1>Ghibli Travel Planner</h1>
+
+        <p class="intro">
+            Plan your dream adventure inspired by cozy landscapes, peaceful villages,
+            and magical scenery.
+        </p>
+
+        <img src="scenery.jpg" alt="Fantasy landscape" class="hero">
+
+        <h2>Select Your Arrival Date</h2>
+
+        <script>
+            $(function () {
+                $("#datepicker").datepicker();
+
+                $("#accordion").accordion();
+
+                $("#tabs").tabs();
+            });
+        </script>
+
+        <label>Arrival date:</label>
+        <input type="text" id="datepicker">
+
+        <h2>Travel Information</h2><div id="accordion">
+
+    <h3>Mountain Cabins</h3>
+    <div>
+        <img src="cabin.jpg" alt="Mountain cabin" class="accordion-img">
+
+        <p>
+            Cozy cabins surrounded beautiful landscapes and animals for relaxation.
+            Perfect for peaceful evening escapes.
+        </p>
+    </div>
+
+    <h3>Village Cafes</h3>
+    <div>
+        <img src="cafe.jpeg" alt="Village cafe" class="accordion-img">
+
+        <p>
+            Visit warm countryside cafes inspired by Ghibli-style scenery
+            and homemade desserts.
+        </p>
+    </div>
+
+    <h3>Spirit Garden Tours</h3>
+    <div>
+        <img src="forest.png" alt="Spirit garden" class="accordion-img">
+
+        <p>
+            Explore magical forest filled with hidden pathways and
+            relaxing scenery and fantasy vibes.
+        </p>
+    </div>
+
+</div>
+
+        <h2>Destination Guide</h2><div id="tabs">
+
+    <ul>
+        <li><a href="#tabs-1">Forest</a></li>
+        <li><a href="#tabs-2">Ocean</a></li>
+        <li><a href="#tabs-3">Village</a></li>
+    </ul>
+
+    <div id="tabs-1">
+
+        <img src="lushforest.webp" alt="Forest scenery" class="tab-img">
+
+        <p>
+            Wander through lush forests with peaceful rivers and hidden
+            pathways tucked beneath ancient trees.
+        </p>
+
+    </div>
+
+    <div id="tabs-2">
+
+        <img src="ocean.jpg" alt="Ocean scenery" class="tab-img">
+
+        <p>
+            Relax near seaside cliffs and enjoy calming ocean sunsets with
+            cool breezes and quiet scenery.
+        </p>
+
+    </div>
+
+    <div id="tabs-3">
+
+        <img src="city.jpg" alt="City scenery" class="tab-img">
+
+        <p>
+            Discover a town filled with bakeries, towering buildings,
+            and charming local shops.
+        </p>
+
+    </div>
+
+</div>
+
+    </main>
+
+</body>
+
+</html>
